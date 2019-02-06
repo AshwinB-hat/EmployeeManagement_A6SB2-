@@ -15,6 +15,7 @@ import java.util.Map;
 import java.util.Optional;
 
 @RestController
+@RequestMapping("/api/v1")
 public class EmployeeController {
     @Autowired
     private EmployeeRepository employeeRepository;
@@ -29,7 +30,7 @@ public class EmployeeController {
             return ResponseEntity.ok().body(employee);
     }
 
-    @PostMapping("employees")
+    @PostMapping("/employees")
     public Employee createEmployee(@Valid @RequestBody Employee employee){
         return employeeRepository.save(employee);
     }

@@ -25,7 +25,7 @@ public class Employee {
         this.id = id;
     }
 
-
+    @Column(name="first_name",nullable=false)
     public String getFirstName() {
         return firstName;
     }

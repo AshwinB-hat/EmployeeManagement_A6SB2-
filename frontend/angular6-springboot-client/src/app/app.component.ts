@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular6-springboot-client';
+  title = 'Angular 6 + Spring Boot 2 + Spring Data JPA + H2 + CRUD ';
 }
